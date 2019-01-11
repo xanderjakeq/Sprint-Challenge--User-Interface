@@ -89,6 +89,14 @@ nav a{
     color: black;
 }
 
+nav a:hover{
+    padding: 0 3px;
+    border-color: turquoise;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    transition-duration: 300ms;
+}
+
 
 .top-content {
     display: flex;
@@ -135,31 +143,6 @@ nav a{
     justify-content: center;
 }
 
-/* About Content Styles */
-.middle-content .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.middle-content .about-content div{
-    width: 48%;
-}
-
-.middle-content .about-content div h2{
-    padding: 5% 0 0;
-    margin-bottom: 15px;
-}
-
-.middle-content .about-content div button{
-    background: none;
-    border: 2px solid black;
-    border-radius: 8px;
-    padding: 1vh 3%;
-    margin: 2vh 0;
-    font-weight: bold;
-}
-
 /* Box Color Styles */
 .middle-content .boxes .box:nth-child(1){
     background-color: teal;
@@ -190,6 +173,50 @@ nav a{
 }
 .middle-content .boxes .box:nth-child(10){
     background-color: dodgerblue;
+}
+
+/* About Content Styles */
+.middle-content .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.middle-content .about-content div{
+    width: 48%;
+}
+
+.middle-content .about-content,.products-wrapper div h2{
+    padding: 5% 0 0;
+    margin-bottom: 15px;
+}
+
+.middle-content .about-content,.products-wrapper div button{
+    background: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 1vh 3%;
+    margin: 2vh 0;
+    font-weight: bold;
+}
+
+.middle-content .about-content,.products-wrapper div button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Products Styles */
+.middle-content .products-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh 0;
+}
+.middle-content .products-wrapper div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bottom-content {
