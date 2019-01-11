@@ -103,6 +103,10 @@ nav a{
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+.top-content .about-text{
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
 
 .middle-content {
     margin-bottom: 20px;
@@ -129,6 +133,31 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* About Content Styles */
+.middle-content .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.middle-content .about-content div{
+    width: 48%;
+}
+
+.middle-content .about-content div h2{
+    padding: 5% 0 0;
+    margin-bottom: 15px;
+}
+
+.middle-content .about-content div button{
+    background: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 1vh 3%;
+    margin: 2vh 0;
+    font-weight: bold;
 }
 
 /* Box Color Styles */
